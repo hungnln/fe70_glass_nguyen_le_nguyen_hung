@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  line-height: 44px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("./../public/glassesImage/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  backdrop-filter: grayscale(1);
+}

@@ -1,0 +1,61 @@
+.glass__content {
+  .glass__show {
+    position: relative;
+    .glass__image {
+      width: 200px;
+      margin: 40px auto;
+      position: relative;
+      box-shadow: 0 0 10px 5px $bg-color;
+      &-model {
+        width: 100%;
+      }
+      &-product {
+        width: 60%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .glass__info {
+      position: absolute;
+      width: 200px;
+      top: 70%;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $primary-theme;
+      padding: 0 10px;
+      .glass__title {
+        font-size: 2rem;
+        color: $secondary-text;
+        margin: 5px 0;
+      }
+      .glass__detail {
+        font-size: 1.2rem;
+        color: $primary-text;
+      }
+    }
+  }
+  .glass__choose {
+    margin: 50px auto;
+    width: 80%;
+    background: $bg-color;
+    display: flex;
+    .glass__list {
+      padding: 60px 30px;
+      .glass-item {
+        border: 2px solid #ccc;
+        margin-bottom: 20px;
+        transition: transform 0.5s;
+        img {
+          width: 100%;
+        }
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
